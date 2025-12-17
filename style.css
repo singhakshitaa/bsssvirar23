@@ -737,3 +737,82 @@ section{
   .page-hero h1{font-size:28px}
   .member-card img{height:200px}
 }
+/* ================= MOBILE HEADER ================= */
+@media (max-width: 768px) {
+
+  /* Top bar */
+  .topbar .wrap{
+    flex-direction:column;
+    gap:6px;
+    text-align:center;
+  }
+  .topbar .right{
+    display:none; /* hide social links on mobile */
+  }
+
+  /* Main nav container */
+  .nav{
+    padding:10px 14px;
+  }
+
+  /* Logo */
+  .logo img{
+    width:44px;
+    height:auto;
+  }
+
+  /* Hamburger */
+  .menu-toggle{
+    display:block;
+    font-size:26px;
+    cursor:pointer;
+    color:#7a1d12;
+  }
+
+  /* Hide menu by default */
+  nav{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    display:none;
+  }
+
+  /* Show when active */
+  nav.active{
+    display:block;
+  }
+
+  nav ul{
+    flex-direction:column;
+    gap:0;
+  }
+
+  nav li{
+    border-bottom:1px solid #eee;
+  }
+
+  nav a{
+    display:block;
+    padding:14px 18px;
+    font-size:16px;
+  }
+
+  /* Donate button mobile */
+  .donate-btn{
+    margin:14px;
+    text-align:center;
+    display:block;
+    border-radius:10px;
+    padding:14px;
+    font-size:16px;
+  }
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle{
+  display:none;
+}
+
