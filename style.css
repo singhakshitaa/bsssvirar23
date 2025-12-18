@@ -1148,7 +1148,7 @@ section{
 
 /* QR */
 .qr-big{
-  max-width:420px;
+  width:420px;
   margin:10px auto 0;
   display:block;
   border-radius:22px;
@@ -1225,7 +1225,7 @@ footer h4{
     font-size:17px;
   }
   .qr-big {
-    max-width: 200px;
+    width: 200px;
     margin: 10px auto 0;
     display: block;
     border-radius: 22px;
@@ -1233,4 +1233,5 @@ footer h4{
     background: #fff;
     box-shadow: 0 15px 35px rgba(0, 0, 0,.25);
 }
+
 
